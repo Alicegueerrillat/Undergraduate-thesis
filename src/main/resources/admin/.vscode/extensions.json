@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    // Vue 3 的语言支持
+    "Vue.volar",
+    // 使用 Prettier 的代码格式化程序
+    "esbenp.prettier-vscode"
+  ]
+}

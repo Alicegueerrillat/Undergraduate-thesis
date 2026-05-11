@@ -1,0 +1,78 @@
+/* 1. 页面容器 */
+.list-page {
+  width: 100%;
+
+
+  .list-page-inner {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+
+  .c-c-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+
+  .c-c-left {
+    flex: none;
+    width: 200px;
+    background: url(http://codegen.caihongy.cn/20251012/d567fd1b812e4f8f81468e39c6c90fb2.jpg) no-repeat left top;
+    padding-top: 30px;
+  }
+
+  .c-c-right {
+    flex: auto;
+    width: 0;
+  }
+}
+
+/* 搜索 */
+.search-wrapper {
+  background-color: #fff;
+  padding: 12px 10px 0 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+
+  .el-form-item {
+    margin-bottom: 12px;
+  }
+
+  /* 文本框宽度 */
+  .el-input {
+    --el-input-width: 180px;
+  }
+
+  /* 单选框宽度 */
+  .el-select {
+    --el-select-width: 180px;
+  }
+
+  /* 搜索按钮 */
+  .searchbtn {
+    .el-button {
+      background: var(--btn-bg-color-);
+      color: var(--btn-font-color-);
+
+      &:hover {
+        background: var(--btn-bg-hover-color-);
+        color: var(--btn-font-hover-color-);
+      }
+    }
+  }
+}
+
+/* 分页 */
+.pagination {
+
+  width: 100%;
+  margin-top: 10px;
+
+  /* 按钮的背景颜色 */
+  .el-pagination {
+    --el-pagination-button-bg-color: #fff;
+  }
+
+  .el-pagination.is-background .el-pager li.is-active {
+    background-color: var(--btn-bg-color-);
+  }
+}

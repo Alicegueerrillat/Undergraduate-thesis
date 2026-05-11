@@ -1,0 +1,50 @@
+/**
+ * @description 登录、注册模块的角色信息列表
+ */
+
+export let roleList = [
+  {
+    hasBackLogin: "是",
+    hasBackRegister: "否",
+    hasFrontLogin: "否",
+    hasFrontRegister: "否",
+    roleName: "管理员",
+    tableName: "users",
+    faceMatch: '否',
+    passwordProtected: '否',
+    emailRegister: '否',
+    accountName: 'username',
+    avatarName: 'image',
+    examName: 'username',      
+  },
+  {
+    hasBackLogin: '否',
+    hasBackRegister: '否',
+    hasFrontLogin: '是',
+    hasFrontRegister: '是',
+    tableName: 'xuesheng',
+    roleName: '学生',
+    faceMatch: '是',
+    passwordProtected: '是',
+    emailRegister: '否',
+    accountName: 'xueshengzhanghao',
+    accountComments: '学生账号',
+    avatarName: 'touxiang',
+    examName: 'xueshengzhanghao', 
+  },
+  {
+    hasBackLogin: '是',
+    hasBackRegister: '是',
+    hasFrontLogin: '否',
+    hasFrontRegister: '否',
+    tableName: 'jiaoshi',
+    roleName: '教师',
+    faceMatch: '否',
+    passwordProtected: '否',
+    emailRegister: '否',
+    accountName: 'jiaoshizhanghao',
+    accountComments: '教师账号',
+    avatarName: 'touxiang',
+    examName: 'jiaoshizhanghao', 
+  },
+]

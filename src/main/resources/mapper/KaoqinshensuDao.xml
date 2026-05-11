@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yb.dao.KaoqinshensuDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.yb.entity.KaoqinshensuEntity" id="kaoqinshensuMap">
+        <result property="kechengmingcheng" column="kechengmingcheng"/>
+        <result property="kechengleixing" column="kechengleixing"/>
+        <result property="kechengfengmian" column="kechengfengmian"/>
+        <result property="shensushijian" column="shensushijian"/>
+        <result property="jiaoshizhanghao" column="jiaoshizhanghao"/>
+        <result property="jiaoshixingming" column="jiaoshixingming"/>
+        <result property="banji" column="banji"/>
+        <result property="xueshengzhanghao" column="xueshengzhanghao"/>
+        <result property="xueshengxingming" column="xueshengxingming"/>
+        <result property="shensuliyou" column="shensuliyou"/>
+        <result property="sfsh" column="sfsh"/>
+        <result property="shhf" column="shhf"/>
+    </resultMap>
+
+	<select id="selectListVO"
+		resultType="com.yb.entity.vo.KaoqinshensuVO" >
+		SELECT * FROM kaoqinshensu  kaoqinshensu         
+        <where>${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectVO"
+		resultType="com.yb.entity.vo.KaoqinshensuVO" >
+		SELECT  kaoqinshensu.* FROM kaoqinshensu  kaoqinshensu 	
+ 		<where>${ew.sqlSegment}</where>
+	</select>
+
+    <select id="selectListView"
+		resultType="com.yb.entity.view.KaoqinshensuView" >
+
+		SELECT  kaoqinshensu.* FROM kaoqinshensu  kaoqinshensu 	        
+        <where>${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectView"
+		resultType="com.yb.entity.view.KaoqinshensuView" >
+		SELECT * FROM kaoqinshensu  kaoqinshensu <where>${ew.sqlSegment}</where>
+	</select>
+	
+
+
+</mapper>

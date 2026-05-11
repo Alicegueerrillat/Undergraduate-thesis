@@ -1,0 +1,27 @@
+/* 1. 页面容器 */
+.detail-page {
+  width: 100%;
+
+  .detail-page-inner {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+
+  /* 图片+商品属性 */
+  .p-d-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    .pictures-box {
+      width: 0;
+      flex: auto;
+    }
+
+    .detail-box {
+      width: 0;
+      flex: auto;
+    }
+  }
+}

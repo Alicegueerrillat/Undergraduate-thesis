@@ -1,0 +1,31 @@
+/* 页面盒子 */
+.layout-page {
+  min-height: 100%;
+
+
+  .header-wrapper {
+    width: 100%;
+    height: 90px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: url(http://codegen.caihongy.cn/20251011/37c75534cfda4c35a895e5b691d9046a.png) no-repeat center / 100% 100%;
+    color: #000000;
+    font-size: 14px;
+  }
+
+  .header-wrapper2 {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    color: #000000;
+    background: url(http://codegen.caihongy.cn/20251011/02db3b7d40f04e05adba9937a41b58d4.jpg);
+    font-size: 14px;
+  }
+}

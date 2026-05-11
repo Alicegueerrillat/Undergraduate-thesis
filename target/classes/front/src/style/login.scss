@@ -1,0 +1,157 @@
+/* 定义全局主题变量 */
+:root {
+
+  /* 主色 */
+  --btn-bg-color-: #848C74;
+  --btn-bg-hover-color-: #5e6650;
+  --btn-font-color-: #FFF;
+  --btn-font-hover-color-: #FFF;
+
+  /* 副色 */
+  --btn2-bg-color-: #6CDBEC;
+  --btn2-bg-hover-color-: #52b3c7;
+  --btn2-font-color-: #FFF;
+  --btn2-font-hover-color-: #FFF;
+
+}
+
+.login {
+  background: url(http://codegen.caihongy.cn/20251011/599e2bfe8c0548ca86c147d9add194fb.jpg) no-repeat center / 100% 100%;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 220px;
+
+  /* 自定义输入框高度 */
+  --ab-input-height: 44px;
+
+  /* 表单盒子 */
+  .loginform {}
+
+  /* 媒体查询 */
+  @media screen and (max-width: 768px) {
+    .loginform {
+      width: 100%;
+    }
+  }
+
+  /* 表单盒子：二级 */
+  .loginform-wrapper {
+    width: 495px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0px 4px 10px 0px #848C74;
+    border-radius: 30px 30px 30px 30px;
+    border: 1px solid #848C74;
+    padding: 20px 60px;
+    border-bottom: 10px solid var(--btn-bg-color-);
+  }
+
+
+
+  .title-tip {
+    background-color: #F1D36D;
+    height: 92px;
+    line-height: 92px;
+    text-align: center;
+    color: #0D1818;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  /* 表单项 */
+  .el-form-item {
+    border-radius: 10px;
+    padding: 0;
+    margin: 0 auto 30px auto;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+  }
+
+  /* 标签 */
+  .el-form-item__label {
+    display: none;
+    color: #fff;
+  }
+
+  /* 提示语 */
+  .el-select__placeholder,
+  .el-input__inner::placeholder {
+    color: #C3C7CC;
+  }
+
+
+  /* 文本框 */
+  .el-input {
+    --el-input-height: var(--ab-input-height);
+    font-size: 14px;
+  }
+
+  .el-input__wrapper {
+    box-shadow: inset 0px 3px 6px 1px rgba(0, 0, 0, 0.16);
+  }
+
+  /* 下拉 */
+  .el-select__wrapper {
+    line-height: var(--ab-input-height);
+    height: var(--ab-input-height);
+    box-shadow: inset 0px 3px 6px 1px rgba(0, 0, 0, 0.16);
+  }
+
+  /* 验证码 */
+  .code {
+    .el-form-item__content {
+      flex-wrap: nowrap;
+    }
+
+    .code-box {
+      height: var(--ab-input-height);
+      cursor: pointer;
+      margin: 0 0 0 10px;
+      display: flex;
+      border-radius: 6px;
+      flex: 0 0 auto;
+      background: var(--btn-bg-color-);
+      width: 120px;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+      gap: 4px;
+    }
+
+  }
+
+  /* 注册按钮盒子 */
+  .register-box {
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+
+    .register-btn {}
+  }
+
+
+  /* 忘记密码 */
+  .forget-btn {}
+
+  /* 登录按钮 */
+  .login-btn {}
+
+  /* 人脸按钮 */
+  .face-box {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+  }
+}

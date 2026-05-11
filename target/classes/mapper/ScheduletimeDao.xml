@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yb.dao.ScheduletimeDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.yb.entity.ScheduletimeEntity" id="scheduletimeMap">
+        <result property="sectionnum" column="sectionnum"/>
+        <result property="starttime" column="starttime"/>
+        <result property="endtime" column="endtime"/>
+    </resultMap>
+
+	<select id="selectListVO"
+		resultType="com.yb.entity.vo.ScheduletimeVO" >
+		SELECT * FROM scheduletime  scheduletime         
+        <where>${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectVO"
+		resultType="com.yb.entity.vo.ScheduletimeVO" >
+		SELECT  scheduletime.* FROM scheduletime  scheduletime 	
+ 		<where>${ew.sqlSegment}</where>
+	</select>
+
+    <select id="selectListView"
+		resultType="com.yb.entity.view.ScheduletimeView" >
+
+		SELECT  scheduletime.* FROM scheduletime  scheduletime 	        
+        <where>${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectView"
+		resultType="com.yb.entity.view.ScheduletimeView" >
+		SELECT * FROM scheduletime  scheduletime <where>${ew.sqlSegment}</where>
+	</select>
+	
+
+
+</mapper>

@@ -1,0 +1,36 @@
+
+const chartData = [
+  {
+    tableName: 'qingjiaxinxi',  
+    xColumn: 'qingjialeixing',  
+    api: 'qingjiaxinxi/group/qingjialeixing',  
+    graphType: '饼',  
+    showHome: false,
+    title: '请假统计',  
+    subNameList: [],  
+    type: 'multiStatic',  
+    typeSections: [],  
+    hasMultiSeries: false,
+    chartSort: '0',  
+    func: '',  
+    queryName: '',  
+    queryRoles: [],  
+  },
+  {
+    tableName: 'kechengkaoqin',  
+    xColumn: 'kaoqinqingkuang',  
+    api: 'kechengkaoqin/group/kaoqinqingkuang',  
+    graphType: '饼',  
+    showHome: false,
+    title: '考勤统计',  
+    subNameList: [],  
+    type: 'multiStatic',  
+    typeSections: [],  
+    hasMultiSeries: false,
+    chartSort: '0',  
+    func: '',  
+    queryName: 'banji',  
+    queryRoles: [],  
+  },
+]
+export default chartData

@@ -1,0 +1,192 @@
+.register {
+  background: url(http://codegen.caihongy.cn/20250908/3f44c9c3175643e78cb447056ff73e7f.png) no-repeat left center;
+  background-attachment: fixed;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+
+  /* 文本框 高度变量 */
+  --ab-input-height-: 44px;
+
+  /* 表单盒子 */
+  .registerform {
+    width: 54%;
+    border-radius: 0;
+    padding: 20px 0;
+    margin: 0;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  /* 媒体查询 */
+  @media screen and (max-width: 768px) {
+    .registerform {
+      width: 100%;
+    }
+  }
+
+  /* 表单盒子：二级 */
+  .registerform-wrapper {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* 标题 */
+  .login-tip {
+    padding: 0;
+    color: #0D1818;
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /* 标题 */
+  .title-box {
+    position: fixed;
+    left: 40px;
+    top: 40px;
+    padding: 0;
+    margin: 0 0 30px 0;
+    color: #589df8;
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  /* 表单项 */
+  .el-form-item {
+    border-radius: 10px;
+    padding: 0;
+    margin: 0 auto 30px auto;
+    height: auto;
+  }
+
+
+  /* 标签 */
+  .el-form-item__label {
+    color: #000;
+    width: 120px;
+    height: var(--ab-input-height-);
+    line-height: var(--ab-input-height-);
+  }
+
+  /* 提示语 */
+  .el-select__placeholder,
+  .el-input__inner::placeholder {
+    color: #C3C7CC;
+  }
+
+  /* 通用输入框 */
+  .el-form-item__content {
+    line-height: var(--ab-input-height-);
+  }
+
+  /* 文本框 */
+  .el-input {
+    --el-input-height: var(--ab-input-height-);
+    font-size: 16px;
+  }
+
+  .el-input__wrapper {
+    box-shadow: inset 0px 3px 6px 1px rgba(0, 0, 0, 0.16);
+  }
+
+  /* 下拉 */
+  .el-select__wrapper {
+    line-height: var(--ab-input-height-);
+    height: var(--ab-input-height-);
+    box-shadow: inset 0px 3px 6px 1px rgba(0, 0, 0, 0.16);
+  }
+
+  /* 文本和密码 */
+  .el-input__inner {}
+
+  /* 密码的清除和眼睛图标 */
+  .el-input .el-input__clear,
+  .el-input .el-input__password {}
+
+  /* 文件 */
+  .yyfile {
+    .el-upload-list__item-name {
+      color: #bbb4b4;
+    }
+  }
+
+  /* 图片 */
+  .el-upload-list--picture-card {
+    --el-upload-list-picture-card-size: 80px;
+  }
+
+  .el-upload--picture-card {
+    --el-upload-picture-card-size: 80px;
+  }
+
+  /* 人脸识别 */
+  .face-form-item {
+    display: flex;
+
+    img {
+      width: 102px;
+      height: 102px;
+      overflow: hidden;
+      border-radius: 8px;
+      position: relative;
+      display: inline-block;
+      border: 1px solid #d9d9d9;
+    }
+  }
+
+  /* 邮箱注册 */
+  .el-statistic__content {
+    font-size: 14px;
+  }
+
+  /* 按钮总盒子 */
+  .btn-wrapper {
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  /* 注册按钮 */
+  .register-btn {
+    border: 1px solid transparent;
+    border-radius: 45px;
+    padding: 4px 15px;
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+    height: 40px;
+
+    color: var(--btn-font-color-);
+    background-color: var(--btn-bg-color-);
+
+    &:hover {
+      color: var(--btn-font-hover-color-);
+      background-color: var(--btn-bg-hover-color-);
+    }
+  }
+
+  /* 登录按钮 */
+  .login-btn {
+    border-radius: 45px;
+    padding: 0 7px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+
+    color: var(--btn2-font-color-);
+    background-color: var(--btn2-bg-color-);
+
+    &:hover {
+      color: var(--btn2-font-hover-color-);
+      background-color: var(--btn2-bg-hover-color-);
+    }
+  }
+}
